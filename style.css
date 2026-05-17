@@ -16,6 +16,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+button {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .container {
@@ -33,7 +42,7 @@ a {
   border-bottom: 1px solid rgba(255,255,255,0.08);
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 50;
 }
 
 .header-inner {
@@ -147,6 +156,8 @@ a {
   background: #15161d;
   border: 1px solid rgba(255,255,255,0.06);
   transition: 0.25s;
+  position: relative;
+  z-index: 0;
 }
 
 .card-hover:hover {
@@ -162,6 +173,8 @@ a {
   background: #15161d;
   border: 1px solid rgba(255,255,255,0.06);
   margin-bottom: 16px;
+  position: relative;
+  z-index: 0;
 }
 
 .price {
@@ -183,6 +196,8 @@ a {
   border-radius: 14px;
   background: #15161d;
   border: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  z-index: 0;
 }
 
 /* CONTACT BUTTONS */
@@ -244,4 +259,24 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 8px;
+  }
 }
