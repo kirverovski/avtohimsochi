@@ -169,6 +169,22 @@ a {
   color: #6C63FF;
 }
 
+/* ABOUT PAGE */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.about-block {
+  padding: 18px;
+  border-radius: 14px;
+  background: #15161d;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
 /* CONTACT BUTTONS */
 
 .contact-buttons {
