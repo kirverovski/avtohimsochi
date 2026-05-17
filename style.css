@@ -225,6 +225,14 @@ button {
   margin-bottom: 12px;
 }
 
+.catalog-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
 .product-card {
   padding: 18px;
   border-radius: 14px;
