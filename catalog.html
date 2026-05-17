@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Автохимия Сочи — Главная</title>
+  <title>Каталог — Автохимия Сочи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,68 +12,147 @@
   <div class="container header-inner">
     <a href="index.html" class="brand">
       <span class="brand-name">АВТОХИМИЯ SOCHI</span>
-      <span class="brand-tagline">профессиональные составы</span>
+      <span class="brand-tagline">каталог продукции</span>
     </a>
     <nav class="nav">
-      <a href="index.html" class="active">Главная</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="about.html">О нас</a>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html" class="active">Каталог</a>
       <a href="contacts.html">Контакты</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-text">
-      <h1>Профессиональная автохимия в Сочи</h1>
-      <p>Производство активной пены, шампуней, чернителей и очистителей. Работаем с юрлицами, ИП и физлицами.</p>
-
-      <div class="hero-buttons">
-        <a href="catalog.html" class="btn-accent">Каталог продукции</a>
-        <a href="contacts.html" class="btn-outline">Связаться</a>
-      </div>
-    </div>
-
-    <div class="hero-card">
-      <h3>Преимущества</h3>
-      <ul>
-        <li>Продажа от 1 литра</li>
-        <li>Бесплатная доставка от 20 л</li>
-        <li>Скидка 10% от 100 л</li>
-        <li>5% бонусов за приведённого клиента</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section">
+<main class="section">
   <div class="container">
-    <h2>Категории продукции</h2>
+    <h1>Каталог продукции</h1>
+    <p class="section-sub">Выберите категорию, чтобы посмотреть составы и цены.</p>
 
     <div class="cards-grid">
-      <a href="catalog.html#phase1" class="card card-hover">
-        <h3>1 Фаза — Активная пена</h3>
+
+      <a href="#phase1" class="card card-hover">
+        <h2>1 Фаза — Активная пена</h2>
         <p>Эконом и Стандарт</p>
       </a>
 
-      <a href="catalog.html#phase2" class="card card-hover">
-        <h3>2 Фаза — Шампунь</h3>
+      <a href="#phase2" class="card card-hover">
+        <h2>2 Фаза — Шампунь</h2>
         <p>Премиум</p>
       </a>
 
-      <a href="catalog.html#black" class="card card-hover">
-        <h3>Чернение</h3>
-        <p>Силиконовые и глицериновые</p>
+      <a href="#black" class="card card-hover">
+        <h2>Чернение</h2>
+        <p>Силиконовые и глицериновые составы</p>
       </a>
 
-      <a href="catalog.html#cleaners" class="card card-hover">
-        <h3>Очистители</h3>
+      <a href="#cleaners" class="card card-hover">
+        <h2>Очистители</h2>
         <p>Стёкла, диски, универсальные</p>
       </a>
+
+      <a href="#tara" class="card card-hover">
+        <h2>Тара</h2>
+        <p>0.5 / 1 / 5 / 20 л</p>
+      </a>
+
     </div>
+
+    <!-- ОЧИСТИТЕЛИ -->
+    <section id="cleaners" class="catalog-section">
+      <h2>Очистители</h2>
+
+      <div class="product-card">
+        <h3>Очиститель стёкол — Премиум</h3>
+        <p class="price">105 ₽/л</p>
+        <p>Удаляет грязь, налёт, следы насекомых. Не оставляет разводов.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Очиститель дисков — Кислотный</h3>
+        <p class="price">150 ₽/л (3000 ₽/20 л)</p>
+        <p>Удаляет тормозную пыль, ржавчину и въевшуюся грязь.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Универсальный очиститель</h3>
+        <p class="price">70 ₽/л (1400 ₽/20 л)</p>
+        <p>Для пластика, ткани, резины, ковролина.</p>
+      </div>
+    </section>
+
+    <!-- ЧЕРНИТЕЛИ -->
+    <section id="black" class="catalog-section">
+      <h2>Чернение резины и пластика</h2>
+
+      <div class="product-card">
+        <h3>Силиконовый — Бюджет</h3>
+        <p class="price">290 ₽/л (5800 ₽/20 л)</p>
+        <p>Глянцевый эффект, защита от выгорания.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Силиконовый — Стандарт</h3>
+        <p class="price">310 ₽/л (6200 ₽/20 л)</p>
+        <p>Оптимальный баланс блеска и стойкости.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Силиконовый — Премиум</h3>
+        <p class="price">350 ₽/л (7000 ₽/20 л)</p>
+        <p>Максимально насыщенный чёрный цвет.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Глицериновый — Концентрат</h3>
+        <p class="price">260 ₽/л (5200 ₽/20 л)</p>
+        <p>Разведение 1:1–1:2 или без разведения.</p>
+      </div>
+    </section>
+
+    <!-- 1 ФАЗА -->
+    <section id="phase1" class="catalog-section">
+      <h2>1 Фаза — Активная пена</h2>
+
+      <div class="product-card">
+        <h3>Эконом</h3>
+        <p class="price">100 ₽/л (2000 ₽/20 л)</p>
+        <p><strong>Разведение:</strong> 1:1–1:3 (пенокомплект), 1:25–1:40 (пеногенератор)</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Стандарт</h3>
+        <p class="price">175 ₽/л (3500 ₽/20 л)</p>
+        <p><strong>Разведение:</strong> 1:3–1:7 (пенокомплект), 1:50–1:80 (пеногенератор)</p>
+      </div>
+    </section>
+
+    <!-- 2 ФАЗА -->
+    <section id="phase2" class="catalog-section">
+      <h2>2 Фаза — Шампунь</h2>
+
+      <div class="product-card">
+        <h3>Шампунь Премиум</h3>
+        <p class="price">120 ₽/л (2400 ₽/20 л)</p>
+        <p>Разведение 1:100–1:200. Густая пена, безопасен для ЛКП.</p>
+      </div>
+    </section>
+
+    <!-- ТАРА -->
+    <section id="tara" class="catalog-section">
+      <h2>Тара</h2>
+
+      <div class="product-card">
+        <h3>Фасовка</h3>
+        <ul class="mini-list">
+          <li>0.5 л — 20 ₽</li>
+          <li>1 л — 30 ₽</li>
+          <li>5 л — 50 ₽</li>
+          <li>20 л — 150 ₽ (на обмен)</li>
+        </ul>
+      </div>
+    </section>
+
   </div>
-</section>
+</main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
