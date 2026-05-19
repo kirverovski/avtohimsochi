@@ -11,8 +11,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <span class="brand-name">АВТОХИМИЯ SOCHI</span>
-      <span class="brand-tagline">контакты</span>
+      <img src="logo.png" alt="АВТОХИМИЯ SOCHI" class="site-logo">
     </a>
     <nav class="nav">
       <a href="index.html">Главная</a>
@@ -25,12 +24,14 @@
 <main class="section">
   <div class="container">
     <h1>Контакты и заказ</h1>
-    <p class="section-sub">Выберите удобный способ связи или оставьте свои контакты — я свяжусь с вами.</p>
+    <p class="section-sub">Выберите удобный способ связи или оставьте свои данные — мы свяжемся с вами.</p>
 
     <div class="contact-layout">
 
+      <!-- Левая колонка -->
       <div>
         <h2>Мессенджеры</h2>
+
         <div class="contact-buttons">
 
           <a href="tel:89896296232" class="btn-contact phone">
@@ -57,13 +58,15 @@
             <li>20 л канистры — на обмен</li>
             <li>Бесплатная доставка по Сочи от 20 л</li>
             <li>Доставка в день обращения или на следующий день</li>
-            <li>Заказы свыше 100 л — за 3 дня</li>
+            <li>Заказы свыше 100 л — в течение 3 дней</li>
           </ul>
         </div>
       </div>
 
+      <!-- Правая колонка -->
       <div>
         <h2>Форма обратной связи</h2>
+
         <form class="contact-form" onsubmit="return false;">
           <label>
             Имя
@@ -114,33 +117,23 @@
   }
 
   function sendWhatsApp() {
-    const text = buildMessage();
-    const url = `https://wa.me/79896296232?text=${text}`;
-    window.open(url, '_blank');
+    window.open(`https://wa.me/79896296232?text=${buildMessage()}`, '_blank');
   }
 
   function sendTelegram() {
-    const text = buildMessage();
-    const url = `https://t.me/avtohimsochi?text=${text}`;
-    window.open(url, '_blank');
+    window.open(`https://t.me/avtohimsochi?text=${buildMessage()}`, '_blank');
   }
 
   function sendMax() {
-    const text = buildMessage();
-    const url = `https://max.ru/u/f9LHodD0cOL8Fm4K2U036imMmbp7HXIIOczuJ0smECU8vSMj8Ur822B2bmA?text=${text}`;
-    window.open(url, '_blank');
+    window.open(`https://max.ru/u/f9LHodD0cOL8Fm4K2U036imMmbp7HXIIOczuJ0smECU8vSMj8Ur822B2bmA?text=${buildMessage()}`, '_blank');
   }
 
   function sendSMS() {
-    const text = buildMessage();
-    const url = `sms:+79896296232?body=${text}`;
-    window.location.href = url;
+    window.location.href = `sms:+79896296232?body=${buildMessage()}`;
   }
 
   function sendEmail() {
-    const text = buildMessage();
-    const url = `mailto:Avtohimsochi@mail.ru?subject=Заявка%20с%20сайта%20Автохимия%20Сочи&body=${text}`;
-    window.location.href = url;
+    window.location.href = `mailto:Avtohimsochi@mail.ru?subject=Заявка%20с%20сайта%20Автохимия%20Сочи&body=${buildMessage()}`;
   }
 </script>
 

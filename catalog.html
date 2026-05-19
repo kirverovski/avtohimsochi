@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Каталог — Автохимия Сочи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +15,8 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <span class="brand-name">АВТОХИМИЯ SOCHI</span>
-      <span class="brand-tagline">каталог продукции</span>
+      <img src="logo.png" alt="АВТОХИМИЯ SOCHI" class="site-logo">
+      <span class="catalog-title">каталог продукции</span>
     </a>
     <nav class="nav">
       <a href="index.html">Главная</a>
@@ -22,54 +26,42 @@
   </div>
 </header>
 
+<!-- Меню категорий -->
+<div class="catalog-menu">
+  <a href="#phase1">Первая фаза</a>
+  <a href="#phase2">Вторая фаза</a>
+  <a href="#black">Чернение</a>
+  <a href="#cleaners">Очистители</a>
+  <a href="#tara">Тара</a>
+</div>
+
 <main class="section">
   <div class="container">
     <h1>Каталог продукции</h1>
     <p class="section-sub">Выберите категорию, чтобы посмотреть составы и цены.</p>
 
-    <div class="cards-grid cards-grid-center">
-
-      <a href="#phase1" class="card card-hover card-center">
-        <h2>Первая фаза</h2>
-      </a>
-
-      <a href="#phase2" class="card card-hover card-center">
-        <h2>Вторая фаза</h2>
-      </a>
-
-      <a href="#black" class="card card-hover card-center">
-        <h2>Чернение</h2>
-      </a>
-
-      <a href="#cleaners" class="card card-hover card-center">
-        <h2>Очистители</h2>
-      </a>
-
-      <a href="#tara" class="card card-hover card-center">
-        <h2>Тара</h2>
-      </a>
-
-    </div>
-
     <!-- 1 ФАЗА -->
     <section id="phase1" class="catalog-section">
       <h2>Первая фаза — Активная пена</h2>
 
-      <!-- Изображение первой фазы -->
-      <img src="firsteco.png" alt="Первая фаза — Активная пена" class="catalog-image">
+      <div class="cards-grid">
 
-      <div class="product-card">
-        <h3>Эконом</h3>
-        <p class="price">100 ₽/л (2000 ₽/20 л)</p>
-        <p><strong>Разведение:</strong> 1:1–1:3 (пенокомплект), 1:25–1:40 (пеногенератор)</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
-      </div>
+        <div class="product-card">
+          <img src="images/first-eco.jpg" alt="Активная пена Эконом">
+          <h3>Эконом</h3>
+          <p class="price">100 ₽/л (2000 ₽/20 л)</p>
+          <p><strong>Разведение:</strong> 1:1–1:3 (ПК), 1:25–1:40 (ПГ)</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
 
-      <div class="product-card">
-        <h3>Стандарт</h3>
-        <p class="price">175 ₽/л (3500 ₽/20 л)</p>
-        <p><strong>Разведение:</strong> 1:3–1:7 (пенокомплект), 1:50–1:80 (пеногенератор)</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
+        <div class="product-card">
+          <img src="images/first-standart.jpg" alt="Активная пена Стандарт">
+          <h3>Стандарт</h3>
+          <p class="price">175 ₽/л (3500 ₽/20 л)</p>
+          <p><strong>Разведение:</strong> 1:3–1:7 (ПК), 1:50–1:80 (ПГ)</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
       </div>
     </section>
 
@@ -77,44 +69,57 @@
     <section id="phase2" class="catalog-section">
       <h2>Вторая фаза — Шампунь</h2>
 
-      <div class="product-card">
-        <h3>Шампунь Премиум</h3>
-        <p class="price">120 ₽/л (2400 ₽/20 л)</p>
-        <p>Разведение 1:100–1:200. Густая пена, безопасен для ЛКП.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
+      <div class="cards-grid">
+
+        <div class="product-card">
+          <img src="images/shampoo-premium.jpg" alt="Шампунь Премиум">
+          <h3>Шампунь Премиум</h3>
+          <p class="price">120 ₽/л (2400 ₽/20 л)</p>
+          <p>Разведение 1:100–1:200. Густая пена, безопасен для ЛКП.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
       </div>
     </section>
 
     <!-- ЧЕРНИТЕЛИ -->
     <section id="black" class="catalog-section">
-      <h2>Чернение резины и пластика</h2>
+      <h2>Чернение резины</h2>
 
-      <div class="product-card">
-        <h3>Силиконовый — Бюджет</h3>
-        <p class="price">290 ₽/л (5800 ₽/20 л)</p>
-        <p>Глянцевый эффект, защита от выгорания.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
-      </div>
+      <div class="cards-grid">
 
-      <div class="product-card">
-        <h3>Силиконовый — Стандарт</h3>
-        <p class="price">310 ₽/л (6200 ₽/20 л)</p>
-        <p>Оптимальный баланс блеска и стойкости.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
-      </div>
+        <div class="product-card">
+          <img src="images/black-budget.jpg" alt="Чернение Бюджет">
+          <h3>Силиконовый — Бюджет</h3>
+          <p class="price">290 ₽/л (5800 ₽/20 л)</p>
+          <p>Глянцевый эффект, защита от выгорания.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
 
-      <div class="product-card">
-        <h3>Силиконовый — Премиум</h3>
-        <p class="price">350 ₽/л (7000 ₽/20 л)</p>
-        <p>Максимально насыщенный чёрный цвет.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
-      </div>
+        <div class="product-card">
+          <img src="images/black-standart.jpg" alt="Чернение Стандарт">
+          <h3>Силиконовый — Стандарт</h3>
+          <p class="price">310 ₽/л (6200 ₽/20 л)</p>
+          <p>Оптимальный баланс блеска и стойкости.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
 
-      <div class="product-card">
-        <h3>Глицериновый — Концентрат</h3>
-        <p class="price">260 ₽/л (5200 ₽/20 л)</p>
-        <p>Разведение 1:1–1:2 или без разведения.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
+        <div class="product-card">
+          <img src="images/black-premium.jpg" alt="Чернение Премиум">
+          <h3>Силиконовый — Премиум</h3>
+          <p class="price">350 ₽/л (7000 ₽/20 л)</p>
+          <p>Максимально насыщенный чёрный цвет.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
+        <div class="product-card">
+          <img src="images/black-glycerin.jpg" alt="Глицериновый чернитель">
+          <h3>Глицериновый — Концентрат</h3>
+          <p class="price">260 ₽/л (5200 ₽/20 л)</p>
+          <p>Разведение 1:1–1:2 или без разведения.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
       </div>
     </section>
 
@@ -122,25 +127,32 @@
     <section id="cleaners" class="catalog-section">
       <h2>Очистители</h2>
 
-      <div class="product-card">
-        <h3>Очиститель стёкол — Премиум</h3>
-        <p class="price">105 ₽/л</p>
-        <p>Удаляет грязь, налёт, следы насекомых. Не оставляет разводов.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
-      </div>
+      <div class="cards-grid">
 
-      <div class="product-card">
-        <h3>Очиститель дисков — Кислотный</h3>
-        <p class="price">150 ₽/л (3000 ₽/20 л)</p>
-        <p>Удаляет тормозную пыль, ржавчину и въевшуюся грязь.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
-      </div>
+        <div class="product-card">
+          <img src="images/glass-cleaner.jpg" alt="Очиститель стёкол">
+          <h3>Очиститель стёкол — Премиум</h3>
+          <p class="price">105 ₽/л</p>
+          <p>Удаляет грязь, налёт, следы насекомых. Не оставляет разводов.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
 
-      <div class="product-card">
-        <h3>Универсальный очиститель</h3>
-        <p class="price">70 ₽/л (1400 ₽/20 л)</p>
-        <p>Для пластика, ткани, резины, ковролина.</p>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
+        <div class="product-card">
+          <img src="images/wheel-acid.jpg" alt="Очиститель дисков кислотный">
+          <h3>Очиститель дисков — Кислотный</h3>
+          <p class="price">150 ₽/л (3000 ₽/20 л)</p>
+          <p>Удаляет тормозную пыль, ржавчину и въевшуюся грязь.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
+        <div class="product-card">
+          <img src="images/universal-cleaner.jpg" alt="Универсальный очиститель">
+          <h3>Универсальный очиститель</h3>
+          <p class="price">70 ₽/л (1400 ₽/20 л)</p>
+          <p>Для пластика, ткани, резины, ковролина.</p>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
       </div>
     </section>
 
@@ -148,15 +160,20 @@
     <section id="tara" class="catalog-section">
       <h2>Тара</h2>
 
-      <div class="product-card">
-        <h3>Фасовка</h3>
-        <ul class="mini-list">
-          <li>0.5 л — 20 ₽</li>
-          <li>1 л — 30 ₽</li>
-          <li>5 л — 50 ₽</li>
-          <li>20 л — 150 ₽ (на обмен)</li>
-        </ul>
-        <a href="contacts.html" class="btn-accent btn-small">Заказать</a>
+      <div class="cards-grid">
+
+        <div class="product-card">
+          <img src="images/tara.jpg" alt="Тара для фасовки">
+          <h3>Фасовка</h3>
+          <ul class="mini-list">
+            <li>0.5 л — 20 ₽</li>
+            <li>1 л — 30 ₽</li>
+            <li>5 л — 50 ₽</li>
+            <li>20 л — 150 ₽ (на обмен)</li>
+          </ul>
+          <a href="contacts.html" class="btn-accent">Заказать</a>
+        </div>
+
       </div>
     </section>
 
