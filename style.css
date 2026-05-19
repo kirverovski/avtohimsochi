@@ -392,9 +392,29 @@ button {
   opacity: 0.8;
 }
 
-/* MOBILE */
-
+/* MOBILE — УДОБНОЕ МЕНЮ */
 @media (max-width: 768px) {
+
+  /* Логотип и шапка */
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Меню — делаем крупным и удобным */
+  .nav {
+    display: flex;
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 18px;
+    padding: 10px 14px;
+    margin-left: 0;
+    border-radius: 10px;
+  }
+
+  /* Гриды */
   .hero-inner {
     grid-template-columns: 1fr;
   }
@@ -409,10 +429,5 @@ button {
 
   .about-grid-2x2 {
     grid-template-columns: 1fr;
-  }
-
-  .nav a {
-    font-size: 14px;
-    margin-left: 10px;
   }
 }
