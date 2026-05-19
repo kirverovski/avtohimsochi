@@ -392,42 +392,56 @@ button {
   opacity: 0.8;
 }
 
-/* MOBILE — УДОБНОЕ МЕНЮ */
+/* БУРГЕР-КНОПКА */
+.burger {
+  display: none;
+  font-size: 32px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 10px;
+  z-index: 1001;
+}
+
+/* МЕНЮ ПО УМОЛЧАНИЮ (ПК) */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
 @media (max-width: 768px) {
 
-  /* Логотип и шапка */
-  .header-inner {
-    flex-direction: row;
-    justify-content: space-between;
+  /* Показываем бургер */
+  .burger {
+    display: block;
   }
 
-  /* Меню — делаем крупным и удобным */
+  /* Прячем меню справа */
   .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #15161d;
+    padding: 80px 20px;
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s ease;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
   }
 
   .nav a {
-    font-size: 18px;
-    padding: 10px 14px;
-    margin-left: 0;
-    border-radius: 10px;
+    font-size: 20px;
+    padding: 12px 0;
   }
 
-  /* Гриды */
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-grid-2x2 {
-    grid-template-columns: 1fr;
+  /* Активное состояние — меню выезжает */
+  .nav.active {
+    right: 0;
   }
 }

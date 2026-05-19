@@ -13,14 +13,22 @@
 
 <header class="site-header">
   <div class="container header-inner">
+
+    <!-- ЛОГОТИП -->
     <a href="index.html" class="brand">
       <img src="logo.png" alt="АВТОХИМИЯ SOCHI" class="site-logo">
     </a>
-    <nav class="nav">
-      <a href="index.html">Главная</a>
+
+    <!-- БУРГЕР-КНОПКА -->
+    <button class="burger" id="burgerBtn">☰</button>
+
+    <!-- МЕНЮ (ПК + МОБИЛЬНОЕ) -->
+    <nav class="nav" id="mobileMenu">
+      <a href="index.html" class="active">Главная</a>
       <a href="catalog.html">Каталог</a>
-      <a href="contacts.html" class="active">Контакты</a>
+      <a href="contacts.html">Контакты</a>
     </nav>
+
   </div>
 </header>
 
@@ -138,6 +146,15 @@
   function sendEmail() {
     window.location.href = `mailto:Avtohimsochi@mail.ru?subject=Заявка%20с%20сайта%20Автохимия%20Сочи&body=${buildMessage()}`;
   }
+</script>
+
+<script>
+  const burger = document.getElementById('burgerBtn');
+  const menu = document.getElementById('mobileMenu');
+
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
 </script>
 
 </body>
